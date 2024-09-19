@@ -11,8 +11,8 @@ var asserters = wd.asserters;
 const desiredCaps = {
   // Set BStack options that would allow App Automate to run
   'bstack:options': {
-    userName: process.env.AA_USERNAME,
-    accessKey: process.env.AA_ACCESS_KEY
+    userName: "carlossalazar_FmfIqC",
+    accessKey: "A6SZiTsY5x5UxQE7UUYM"
   },
 
   // Percy Options (defaults)
@@ -22,7 +22,7 @@ const desiredCaps = {
   },
 
   // Set URL of the application under test
-  app: process.env.APP,
+  app: "bs://611f68425a1efddb7ef7803aecbcb8188004d461",
 
   // Specify device and os_version for testing
   device: 'Google Pixel 6',
@@ -59,7 +59,7 @@ driver.init(desiredCaps)
   })
   .then(function (searchInput) {
     // Change `BrowserStack` to other word to see the diff in next build
-    return searchInput.sendKeys("BrowserStack");
+    return searchInput.sendKeys("This is a test to see if I can detect any visual changes");
   })
   .then(function () {
     return driver.elementsByClassName('android.widget.TextView');   
