@@ -34,7 +34,9 @@ const desiredCaps = {
   // Set other BrowserStack capabilities
   project: 'First Node App Percy Project',
   build: 'App Percy wd Android',
-  name: 'first_visual_test'
+  name: 'first_visual_test',
+  PERCY_TARGET_BRANCH: "Varlos"
+
 };
 
 // Initialize the remote Webdriver using BrowserStack remote URL
