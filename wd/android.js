@@ -2,7 +2,7 @@ const percyScreenshot = require('@percy/appium-app');
 const wd = require('wd');
 var asserters = wd.asserters;
 
-process.env.PERCY_TARGET_BRANCH = "tutorial-example";
+process.env.PERCY_TARGET_BRANCH = "charlie";
 
 // Note: While this example shows how to use percyScreenshot with Browserstack App
 // Automate, percyScreenshot method just expects a initialized driver object and does
@@ -21,7 +21,7 @@ const desiredCaps = {
   'percyOptions': {
     enabled: true,
     ignoreErrors: true,
-    PERCY_TARGET_BRANCH: "tutorial-example"
+    PERCY_TARGET_BRANCH: "charlie"
   },
 
   // Set URL of the application under test
@@ -35,7 +35,7 @@ const desiredCaps = {
   project: 'First Node App Percy Project',
   build: 'App Percy wd Android',
   name: 'first_visual_test',
-  PERCY_TARGET_BRANCH: "tutorial-example"
+  PERCY_TARGET_BRANCH: "charlie"
 
 };
 
